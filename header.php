@@ -32,7 +32,7 @@ if (!function_exists('ambil_ip_server')) {
     }
 }
 
-$info_hostname  = gethostname() ?: '-';
+$info_hostname  = gethostname() ?: '-'
 $info_ip_server = implode(', ', ambil_ip_server($info_hostname)) ?: '-';
 $info_ip_client = ($_SERVER['REMOTE_ADDR'] ?? '-') . ':' . ($_SERVER['REMOTE_PORT'] ?? '-');
 $info_waktu     = date('H:i:s');
